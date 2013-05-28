@@ -24,8 +24,8 @@ Vagrant::Config.run do |config|
   config.vm.network :hostonly, "192.168.33.10"
 
   config.dns.tld      = "dev"
-  config.vm.host_name = "ecabo"
-  config.dns.patterns = [/^.*ecabo.dev$/]
+  config.vm.host_name = "safe-downloads"
+  config.dns.patterns = [/^.*safe-downloads.dev$/]
 
   # Share an additional folder to the guest VM. The first argument is
   # an identifier, the second is the path on the guest to mount the
