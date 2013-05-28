@@ -1,0 +1,9 @@
+common: &common
+  :strategies:
+    - :hmac_query
+    - :hmac_header
+  :ttl: 300
+
+development:
+  <<: *common
+  :secret: "testsecret"
