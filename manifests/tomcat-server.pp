@@ -127,14 +127,14 @@ class doinstall {
 
   include projects
   include installrvm
-  include java::jdk
+#  include java::jdk
   include redis::server
   include postgresql::server
   include dbsetup
   
   class { requirements: stage => 'requirementsstage' }
 
-  Class['java::jdk'] -> Class['installrvm'] -> Class['projects']
+  Class['installrvm'] -> Class['projects']
 }
 
   # disable the firewall
